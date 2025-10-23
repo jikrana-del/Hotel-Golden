@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+html,
+body {
+  font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif !important;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.max-width {
+  max-width: 1300px;
+  margin: 0 auto;
+
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+.gep {
+  gap: 25px;
+}
+
+.small_gep {
+  gap: 10px;
+}
+
+li {
+  list-style: none;
+}
+
+
+
+.btn {
+  background: linear-gradient(135deg, rgba(197, 157, 95, 0.96),
+      rgba(255, 223, 150, 0.95),
+      rgba(255, 223, 150, 0.95),
+      rgba(197, 157, 95, 0.96));
+  color: #0a1a2f;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 12px;
+  transition: all 0.4s ease;
+  box-shadow: 0 6px 18px rgba(212, 175, 55, 0.4);
+}
+
+.btn a {
+  color: #0a1a2f;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.btn:hover {
+  background-position: right center;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(247, 215, 116, 0.6);
+}
+
+.btn:active {
+  transform: scale(0.97);
+  box-shadow: 0 5px 12px rgba(247, 215, 116, 0.5);
+}
+
+.screen_icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 6px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+
+}
+
+.screen_icon:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fullscreen_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.95);
+  justify-content: center;
+  z-index: 9999;
+}
+
+.full_img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+  animation: zoomIn 0.3s ease;
+}
+
+/* Close icon */
+.close_icon {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.close_icon:hover {
+  color: #ffcc00;
+}
+
+.left_icon {
+  position: absolute;
+  transition: 0.3s ease;
+  top: 50%;
+  left: 3%;
+  color: #fff;
+  cursor: pointer;
+}
+
+.right_icon {
+  top: 50%;
+  right: 3%;
+  position: absolute;
+  transition: 0.3s ease;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+/* slider images left or Right icon  */
+
+.navButton {
+  position: absolute;
+  top: 50% !important;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.25);
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 12px 17px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  z-index: 10;
+  backdrop-filter: blur(5px);
+  background-color: #ECD2AB;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  text-align: center;
+  background: linear-gradient(135deg, rgba(197, 157, 95, 0.96),
+      rgba(255, 223, 150, 0.95),
+      rgba(255, 223, 150, 0.95),
+      rgba(197, 157, 95, 0.96));
+}
+
+.navButton:hover {
+  background: rgba(255, 255, 255, 0.5);
+  transform: scale(1.1) translateY(-50%);
+  color: #000;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+  background: linear-gradient(135deg, rgba(197, 157, 95, 0.96));
+}
+
+.left {
+  left: 25px;
+}
+
+.right {
+  right: 25px;
+}
+
+
+
+/* Smooth animation when image opens */
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.activeLink {
+  color: #b18200 !important;
+}
+
+.goldImg {
+  background-image: url('../../public/pattern.png');
+  background-size: 350px 150px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 25px;
+  margin: 0 auto 30px auto;
+}
+
+@media (max-width:426px) {
+  .goldImg {
+    background-size: 280px 150px;
+  }
+
+}

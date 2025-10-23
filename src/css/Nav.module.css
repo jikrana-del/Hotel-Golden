@@ -1,0 +1,68 @@
+nav containar
+.nev_containar {
+  height: 50px;
+  background-color: #172C42;
+}
+
+.nav {
+  color: #172C42;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ECD2AB;
+  z-index: 9;
+}
+ 
+.nav a,
+p {
+  color: #172C42;
+  font-weight: 600;
+}
+
+.nav_section span {
+  font-size: 23px;
+  color: #172C42;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1025px) {
+  .nav_section {
+    padding: 0 10px;
+    font-size: 14px;
+  }
+}
+
+@media(max-width : 768px) {
+  .nev_containar {
+    display: none;
+  }
+}
+
+
+
+
+
+
+.nav_section span {
+  font-size: 23px;
+  color: #172C42;
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+/* Hover pe short animation */
+.nav_section span:hover {
+  transform: scale(1.2) rotate(5deg);
+  color: #b8860b;
+}
+

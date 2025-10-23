@@ -1,0 +1,288 @@
+.navlink {
+  top: 57px;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow: 0 10px 30px rgba(6, 24, 45, 0.35);
+  z-index: 990;
+  border-bottom: 2px solid #ECD2AB;
+  background-color: rgba(6, 24, 45, 0.94);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.header_containar {
+  height: 140px;
+}
+
+.nav_containar {
+  width: 100%;
+  padding: 10px 0;
+  /* background-color: #9b7a1d; */
+}
+
+.navlink a {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.link {
+  transition: 0.2s ease-in-out;
+  gap: 8px;
+}
+
+/* logo */
+.logo {
+  width: 70px;
+
+}
+
+.header_Logo {
+  gap: 10px;
+
+}
+
+.brandName {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+.brandStrong {
+
+  font-weight: 800;
+  font-size: 27px;
+  background: linear-gradient(90deg,
+      #b58e32 0%,
+      #caa84b 25%,
+      #ffd47a 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 1px;
+  transition: transform 0.3s cubic-bezier(.4, 2, .3, 1), text-shadow 0.3s cubic-bezier(.4, 2, .3, 1);
+}
+
+.brandStrong:hover {
+  transform: scale(1.05);
+  text-shadow: 0 2px 6px rgba(255, 223, 120, 0.6);
+}
+
+
+/* Link */
+
+.link a {
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  padding: 10px;
+  transition: all 0.3s ease;
+  color: #ECD2AB;
+}
+
+/* ✨ Hover: add soft glow (golden-white) */
+.link a:hover {
+  transform: translateY(-2px);
+  text-shadow:
+    0 0 8px rgba(255, 255, 255, 0.35),
+    0 0 16px rgba(18, 64, 104, 0.5);
+}
+
+/* 🌈 Underline animation (light blue-gold mix) */
+.link a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg,
+      #b58e32 0%,
+      #caa84b 25%,
+      #ffd47a 100%);
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+.activeLink {
+  color: #b18200 !important;
+}
+
+.link a:hover::after {
+  width: 100%;
+}
+
+.parent_link {
+  position: relative;
+
+}
+
+.parent_link:hover.parent_link ul {
+  display: block;
+}
+
+.parent_link ul {
+  display: none;
+  top: 12px;
+  border-top: 4px solid#C9A669;
+  left: -70px;
+  position: absolute;
+  background-color: #9b7a1d;
+  background-color: #ffffff;
+  box-shadow: 0 10px 30px rgba(6, 24, 45, 0.35);
+  border-radius: 5px;
+  width: 290px;
+  padding: 10px;
+}
+
+.parent_link ul>li {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  color: #152639;
+}
+
+.parent_link ul li a {
+  color: #152639;
+  display: block;
+  width: 100% !important;
+  font-size: 14px;
+  border: 1px solid rgba(128, 128, 128, 0.17);
+  border-top: none;
+
+}
+
+.parent_link ul.show {
+  display: block;
+}
+
+.arrUp {
+  transition: 0.3s ease-in-out;
+  transform: rotate(180deg);
+
+}
+
+.parent_link:hover .arrUp {
+  transform: rotate(0deg);
+}
+
+
+/* navbar */
+.navbar {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+@media (max-width:1307px) {
+  .nav_containar {
+    width: 90%;
+  }
+
+  .link {
+    gap: 10px;
+  }
+}
+
+@media (max-width:1167px) {
+
+  .link {
+    background-color: #d9bbbb;
+    position: absolute;
+    left: 0;
+    top: -300px;
+    width: 100%;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 10px 30px rgba(6, 24, 45, 0.35);
+    background-color: #fff;
+    height: 300px;
+    overflow-y: scroll !important;
+  }
+
+  .parent_link:hover .arrUp {
+    transition: 0.3s ease-in-out;
+    transform: rotate(180deg);
+
+  }
+
+  .link li {
+    width: 90%;
+  }
+
+  .link li a {
+    display: block;
+    width: 100% !important;
+    color: #152639;
+    border: 1px solid rgba(128, 128, 128, 0.17);
+
+  }
+
+  .parent_link ul {
+    top: 0;
+    border: none;
+    width: 95% !important;
+    position: relative;
+    display: block;
+    left: 15px;
+    background: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin: 9px;
+  }
+
+  .parent_link ul li a {
+    width: 97% !important;
+    margin: 0;
+    font-size: 13px;
+  }
+
+
+  .header_btn {
+    display: none !important;
+  }
+
+  .navbar {
+    display: block;
+    color: #ECD2AB;
+  }
+
+  .show {
+    top: 92px;
+  }
+
+  .display {
+    top: -600px;
+  }
+}
+
+@media(max-width : 768px) {
+  .navlink {
+    top: 0;
+  }
+
+  .header_containar {
+    height: 91px;
+  }
+}
+
+@media(max-width:321px) {
+
+  .brandStrong {
+    font-size: 17px;
+    background-color: #152639;
+  }
+
+  .show {
+    top: 77px;
+  }
+}

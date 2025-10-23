@@ -1,0 +1,105 @@
+.facilities_title {
+  margin: 50px auto;
+}
+
+
+.facilities_section {
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 50px;
+  margin: 50px auto !important;
+  justify-content: center !important;
+}
+
+.facilities_card {
+  border-radius: 7px;
+  transition: all 0.4s ease;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.facilities_card img {
+  border-bottom: 4px solid #b8860b;
+  width: 350px;
+  height: 250px;
+}
+
+.facilities_card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+@media(max-width:420px) {
+  .facilities_card img {
+    width: 300px;
+  }
+}
+
+
+
+
+
+.bookNow_section {
+  background: linear-gradient(135deg, #fffaf0b3, #f9f6efc2),
+    url('../../public/bg-card1.avif') center/cover no-repeat;
+
+  color: #2b2b2b;
+  padding: 90px 20px;
+  text-align: center;
+  margin: 80px auto 0 auto;
+  border-radius: 15px 15px 0 0;
+  box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.bookNow_text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #b8860b;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.bookNow_text p {
+  max-width: 700px;
+  margin: 0 auto 35px auto;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+.bookNow_btn {
+  background-color: #F3D692;
+  color: black;
+  padding: 12px 28px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.bookNow_btn:hover {
+  background-color: #fff;
+  color: #B8860B;
+  border: 2px solid black;
+}
+
+/* Simple animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media(max-width:768px) {
+  .bookNow_text h2 {
+    font-size: 23px;
+  }
+}
