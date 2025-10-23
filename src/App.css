@@ -219,7 +219,7 @@ li {
 }
 
 .goldImg {
-  background-image: url('./public/pattern.png');
+  background-image: url('/pattern.png');
   background-size: 350px 150px;
   background-repeat: no-repeat;
   background-position: center;
