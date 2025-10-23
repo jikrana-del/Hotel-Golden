@@ -1,23 +1,23 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const AC_images = Array.from({ length: 14 }, (_, i) => {
-  const basePath = `/gallery-images/AC-images/AC-${i + 1}`;
+  const basePath = `./gallery-images/AC-images/AC-${i + 1}`;
   return [`${basePath}.webp`, `${basePath}.jpg`];
 })
 
 
 const Non_AC_images = Array.from({ length: 10 }, (_, i) => {
-  const basePath = `/gallery-images/Non-AC-images/Non-AC-${i + 1}`;
+  const basePath = `./gallery-images/Non-AC-images/Non-AC-${i + 1}`;
   return [`${basePath}.webp`, `${basePath}.jpg`, `${basePath}.jpeg`];
 });
 
 const Dormitory_images = Array.from({ length: 3 }, (_, i) => {
-  const basePath = `/gallery-images/Dormitory-images/dormitory-${i + 1}`;
+  const basePath = `./gallery-images/Dormitory-images/dormitory-${i + 1}`;
   return [`${basePath}.webp`, `${basePath}.jpg`];
 })
 
 const Economic_images = Array.from({ length: 2 }, (_, i) => {
-  const basePath = `/gallery-images/Economic-images/economic-${i + 1}`;
+  const basePath = `./gallery-images/Economic-images/economic-${i + 1}`;
   return [`${basePath}.webp`, `${basePath}.jpg`];
 })
 const RoomCategotyData = [

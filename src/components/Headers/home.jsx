@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import style from "../../css/Home.module.css";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { Destination_place, cards, Facilities, FAQ } from "./Home_Helper";
-const SliderImages = Array.from({ length: 10 }, (_, i) => `/hero-images/hero-${i + 1}.jpg`);
+const SliderImages = Array.from({ length: 10 }, (_, i) => `./hero-images/hero-${i + 1}.jpg`);
 import { NavLink } from "react-router-dom";
 import { FiMaximize } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";

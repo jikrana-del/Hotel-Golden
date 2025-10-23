@@ -12,10 +12,10 @@ import { GiWashingMachine } from "react-icons/gi";
 
 
 
-const DestinationImages = Array.from({ length: 6 }, (_, i) => `/destinations-place/destinations-${i + 1}.jpg`);
+const DestinationImages = Array.from({ length: 6 }, (_, i) => `./destinations-place/destinations-${i + 1}.jpg`);
 
 const CardImages = Array.from({ length: 6 }, (_, i) => {
-  const basePath = `/card-images/card-${i + 1}`;
+  const basePath = `./card-images/card-${i + 1}`;
   return [`${basePath}.jpg`, `${basePath}.jpeg`]
 });
 
