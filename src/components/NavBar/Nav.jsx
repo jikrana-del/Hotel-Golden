@@ -10,8 +10,21 @@ function Nav() {
       <section className={`${style.nav}`}>
         <nav className={`flex  max-width ${style.nav_section}`}>
           <div className={`flex gep`}>
-            <p className={`flex`}><span>  <FaPhone /></span>  + 9574352195</p>
-            <NavLink className={`flex small_gep `}><span>  <FaEnvelope /> </span>  hotelgolden.into@gmail.com</NavLink>
+            {/* <p className={`flex`}><span>  <FaPhone /></span>  + 9574352195</p> */}
+            <p>
+              <a href="tel:+9574352195" className={`flex`}>
+                <span>  <FaPhone /></span>  + 9574352195
+              </a>
+            </p>
+
+
+            <a href="mailto:hotelgolden.into@gmail.com" className={`flex small_gep`}>
+              <span>  <FaEnvelope /> </span>  hotelgolden.into@gmail.com
+            </a>
+
+            {/* <NavLink className={`flex small_gep `}><span>  <FaEnvelope /> </span>  hotelgolden.into@gmail.com</NavLink> */}
+
+
           </div>
           <div className={`flex gep`}>
             <div className={`flex gep`}>

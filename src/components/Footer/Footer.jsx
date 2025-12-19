@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import { FaFacebookF, FaInstagram, FaTwitter, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { HashLink } from 'react-router-hash-link';
 import style from "../../css/Footer/Footer.module.css";
 import { HiOutlineArrowUp } from "react-icons/hi";
 import { IoLogoYoutube } from "react-icons/io";
@@ -8,8 +9,10 @@ function Footer() {
 
   return (
     <footer className={style.footer}>
-      <div id="top" className={style.top_icon}>
-        <a href="#top"> <HiOutlineArrowUp size={25} /></a>
+      <div  className={style.top_icon}>
+        <HashLink smooth to="#top">
+          <HiOutlineArrowUp size={25} />
+        </HashLink>
 
       </div>
       <div className={`${style.footerContainer} max-width `}>

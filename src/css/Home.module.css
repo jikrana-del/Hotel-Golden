@@ -372,7 +372,6 @@
 }
 
 .Destination_img {
-  background-color: #6D4F4B;
   width: 100%;
   height: 50%;
   position: relative;
@@ -492,29 +491,26 @@
 
   .faq_title {
     font-size: 18px;
-    padding: 10px;
+    padding: 14px;
     text-align: center;
   }
+ .card {
+   flex-direction: column;
+ }
+ .card_img_containar {
+   width: 100% !important;
+ }
 
+ .card_content {
+   width: 100% !important;
+ }
+
+ .card.reverse {
+   flex-direction: column;
+ }
 }
 
 @media(max-width:426px) {
-  .card {
-    flex-direction: column;
-  }
-
-  .card_img_containar {
-    width: 100% !important;
-  }
-
-  .card_content {
-    width: 100% !important;
-  }
-
-  .card.reverse {
-    flex-direction: column;
-  }
-
   .goldImg {
     background-size: 280px 150px;
   }
